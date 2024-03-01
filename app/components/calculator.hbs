@@ -1,0 +1,14 @@
+{{!-- app/components/calculator-component.hbs --}}
+
+<div class="calculator">
+    <h1>Calculadora</h1>
+  <input type="number" {{on "input" this.updateOperand1}} placeholder="Operando 1">
+  <input type="number" {{on "input" this.updateOperand2}} placeholder="Operando 2">
+  <div class="buttons">
+    <button type="button" {{action this.sum}}>+</button>
+    <button type="button" {{action this.subtract}}>-</button>
+    <button type="button" {{action this.multiply}}>*</button>
+    <button type="button" {{action this.divide}}>/</button>
+  </div>
+  <div class="result">Resultado: {{this.result}}</div>
+</div>

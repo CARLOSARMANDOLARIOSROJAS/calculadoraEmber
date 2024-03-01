@@ -1,1 +1,48 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="number"] {
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+  
+  button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+  }
+  
